@@ -10,15 +10,20 @@
 ## Solution
 - **Calculate Total Sales**:
     - Add a column for **Total Sales** using the formula:  
-        `=Quantity Sold * Price per Unit`
+        ```
+      =Quantity Sold * Price per Unit
+        ```
       
 - **Find the Top-Selling Product in Each Category**:
     - Use the **MAXIFS** formula to find the maximum sales for each category.  
         Formula:  
-        `=MAXIFS(Total Sales, Category, "Category Name")`
+        ```
+      =MAXIFS(Total Sales, Category, "Category Name")
+        ```
       
 - **Identify the Top Product**:
     - Use the **INDEX-MATCH** combination to return the product name corresponding to the maximum sales:
-      `
+
+      ```
       =INDEX(Product Name Range, MATCH(MAXIFS(Sales, Category, "Category Name"), Sales, 0))
-      `
+      ```
