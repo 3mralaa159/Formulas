@@ -9,6 +9,7 @@
  
 ## Data 
 |Product Name|Category|Quantity Sold|Price per Unit|Total Sales|
+|------------||------------||------------||------------||------------|
 |T-Shirt|Clothing|50|$20|$1,000|
 |Jeans|Clothing|30|$50|$1,500|
 |Sneakers|Footwear|40|$80|$3,200|
