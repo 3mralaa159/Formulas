@@ -25,5 +25,5 @@
     - Use the **INDEX-MATCH** combination to return the product name corresponding to the maximum sales:
 
       ```
-      =INDEX(Product Name Range, MATCH(MAXIFS(Sales, Category, "Category Name"), Sales, 0))
+      =INDEX(Product Name Range, MATCH(MAXIFS(Total Sales, Category, "Category Name"), Sales, 0))
       ```
