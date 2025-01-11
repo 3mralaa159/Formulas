@@ -8,6 +8,7 @@
   - Price per Unit
  
 ## Data 
+
 |Product Name|Category|Quantity Sold|Price per Unit|Total Sales|
 |------------||------------||------------||------------||------------|
 |T-Shirt|Clothing|50|$20|$1,000|
