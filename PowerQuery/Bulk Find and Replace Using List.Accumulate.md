@@ -2,6 +2,7 @@
 
 This project demonstrates how to efficiently apply bulk find-and-replace transformations in **Power Query (M Language)** using `List.Accumulate`. The method iterates through a mapping table, replacing text values in a specified column of the target dataset. This approach is useful for standardizing inconsistent text entries, such as customer names, product codes, or categories.
 
+---
 ## **Problem:**
 
 In data transformation tasks, maintaining **consistent naming conventions** is crucial. A common challenge is handling slight variations in names due to typos, abbreviations, or alternative formats. Manually correcting these inconsistencies is inefficient, especially for large datasets.
@@ -9,7 +10,7 @@ In data transformation tasks, maintaining **consistent naming conventions** is c
 **Example Scenario:** We have two tables:
 - **Table 1:** Contains sales data with inconsistent customer names.
 - **Table 2:** A mapping table specifying the incorrect name variations and their corresponding standardized versions.
-
+---
 ## **Solution:**
 
 ```
@@ -26,7 +27,7 @@ In data transformation tasks, maintaining **consistent naming conventions** is c
 )
 
 ```
-
+---
 ## **How It Works**
 
 1. **List.Accumulate Iteration:**
@@ -36,7 +37,7 @@ In data transformation tasks, maintaining **consistent naming conventions** is c
 2. **Dynamic Execution:**
     - Automates replacements without requiring manual function calls for each pair.
     - Scales easily for large datasets.
-
+---
 Example
 - **Iteration 1 (Find: "Wicks Ltd", Replace: "Wicks Limited")**
 	- No changes because "Wicks Ltd" does **not** exist in Table 1.
@@ -47,7 +48,7 @@ Example
 - **Iteration 4 (Find: "Marvin Hillton", Replace: "Magic Marvin")**
 	- No changes because "Marvin Hillton" does **not** exist in Table 1 (note: "Marvin Hilton" exists, but it’s not an exact match).
 
-
+---
 ## **Ref**
-https://www.youtube.com/watch?v=Wlxx2NSAwZg
-https://exceloffthegrid.com/power-query-replace-values-from-list/#Example
+- https://www.youtube.com/watch?v=Wlxx2NSAwZg
+- https://exceloffthegrid.com/power-query-replace-values-from-list/#Example
