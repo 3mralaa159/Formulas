@@ -46,3 +46,8 @@ Example
 	- No changes because "Sarah Toote (t/a Epic Designs)" does **not** exist in Table 1.
 - **Iteration 4 (Find: "Marvin Hillton", Replace: "Magic Marvin")**
 	- No changes because "Marvin Hillton" does **not** exist in Table 1 (note: "Marvin Hilton" exists, but it’s not an exact match).
+
+
+## **Ref**
+https://www.youtube.com/watch?v=Wlxx2NSAwZg
+https://exceloffthegrid.com/power-query-replace-values-from-list/#Example
